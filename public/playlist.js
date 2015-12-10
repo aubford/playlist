@@ -10,12 +10,12 @@ $(function(){
   })
 
 
-  var poster = $.ajax ({
-
-    url: "https://lit-fortress-6467.herokuapp.com/post",
-    method: "POST"
-
-  })
+  // var poster = $.ajax ({
+  //
+  //   url: "https://lit-fortress-6467.herokuapp.com/post",
+  //   method: "POST"
+  //
+  // })
 
 
   function printAlbum (idNumber, array){
@@ -55,14 +55,24 @@ $(function(){
     })
 
     $(".submitBin").on("click", function(){
-
-
-
       var names = []
       $("select").children().each(function(a,e){
             names.push($(this).val())
       })
+
       console.log(names)
+
+      var poster = $.ajax ({
+
+        url: "https://lit-fortress-6467.herokuapp.com/post",
+        method: "POST",
+        data: {names:"names"}
+
+      })
+
+      poster.done(function(payload){
+      console.log(payload)
+      })
 
     })
 
