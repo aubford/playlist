@@ -89,6 +89,7 @@ h2 {
 
 
 .randomImg {
+  display: block;
   height: 23vh;
   width: 23vh;
   margin-top: 4vh;
@@ -153,6 +154,10 @@ form {
     height: 30vh;
     border: 2px solid black;
 
+}
+
+option {
+  font-size: 4vh;
 }
 
 
