@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>playlist</title>
     <link rel="stylesheet" href="app.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   </head>
   <body>
     <header class="playlistHeader">click an album to add its tracks to the bin</header>
@@ -19,10 +20,13 @@
       </div>
     </div>
     <form action="get">
-      <select name="select" class="center" id="select" multiple></select>
-      <button class="button inlineBlock">clear tracks</button>
-      <button class="button inlineBlock" type="submit">submit bin</button>
+      <select name="select" id="select" multiple></select>
+      <button type="button" class="button inlineBlock">clear tracks</button>
+      <button type="button" class="button inlineBlock">submit bin</button>
     </form>
     <footer>&copy; 2015 Aubrey Ford</footer>
+    <script type="text/javascript" src="playlist.js">
+
+    </script>
   </body>
 </html>
