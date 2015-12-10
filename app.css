@@ -22,7 +22,8 @@ body{
 
 header {
   height: 7vh;
-  font-size: 14px;
+  font-size: 3vh;
+  color:white;
   background-color: #898a77;
   border-bottom: 3px solid #535444;
 }
@@ -45,23 +46,24 @@ header {
 h2 {
   width: 100%;
   color: purple;
-  font-size: 6vh;
+  font-size: 50px;
   text-align: center;
   letter-spacing: .5vw;
 }
 
 .button {
   display: block;
-  height: 6vh;
-  line-height: 6vh;
-  width: 50%;
+  height: 4vh;
+  line-height: 4vh;
+  width: 27vw;
   margin-top: 2vh;
   text-align: center;
   color: white;
   background-color: #28281a;
   text-decoration: none;
-  border-radius: 10px;
-  font-size: 2vh;
+  border-radius: 5px;
+  font-size: 2vw;
+  border: none;
 }
 
 /*right*/
@@ -103,4 +105,59 @@ footer {
   height: 5vh;
   padding-left: 2vw;
   font-size: 2vh;
+}
+
+/*--------------------------------*/
+/*playlist page*/
+/**/
+.playlistHeader{
+  height: 15vh;
+  padding-left: 5vw;
+  padding-top: 11vh;
+  border: none;
+}
+
+/**/
+.albums {
+  height:20vh;
+  padding-top: 3vh;
+  padding-left: 30px;
+  overflow-x: scroll;
+  width: 100vw;
+}
+
+.overwide {
+  width: 860px;
+}
+
+
+.album {
+  float: left;
+  background: orange;
+  width: 75px;
+  height: 75px;
+  margin-right: 30px;
+}
+
+/**/
+form {
+  width: 80vw;
+  height:56vh;
+  margin: 2vh auto;
+}
+
+#select {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2vh;
+    height: 30vh;
+    border: 2px solid black;
+
+}
+
+
+/*++++++++++++++++++++++++++++*/
+
+.inlineBlock {
+  display: inline-block;
 }
