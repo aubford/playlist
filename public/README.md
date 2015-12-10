@@ -1,5 +1,6 @@
 # Playlist Quarter One Assessment
--completed module 1
+-completed module 1.
+-completed remaining mvp modules.
 
 
 
