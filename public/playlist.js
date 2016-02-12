@@ -31,10 +31,12 @@ $(function(){
 
   getter.done(function(response){
 
+    var allAlbums  = response.results
 
-    response.results.forEach(function(e){
+    allAlbums.forEach(function(e){
         $(".overwide").append("<img name='" + e['title'] + "' id='" + e['id'] + "' class='album' src='images/" + e['cover_art'] + "'>")
     })
+
 
 //////////////////
 
@@ -46,20 +48,20 @@ $(function(){
         var info = printAlbum(clickedId, response['results'])
 
         $("select").append("<option value='"+nameVal+"'>"+info+"</option>")
-
-
     })
+
 
     $(".clear").on("click", function(){
         $("select").children().remove()
     })
 
+
     $(".submitBin").on("click", function(){
       var names = []
+
       $("select").children().each(function(a,e){
             names.push($(this).val())
       })
-
       console.log(names)
 
       var poster = $.ajax ({
@@ -67,7 +69,6 @@ $(function(){
         url: "https://lit-fortress-6467.herokuapp.com/post",
         method: "POST",
         data: {names:"names"}
-
       })
 
       poster.done(function(payload){

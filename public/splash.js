@@ -22,16 +22,29 @@ $(function(){
     }
 
 
+/////////////wrong///////////////
+    // function randomize(){
+    //   return Math.floor(Math.random() * 5)
+    // }
+    //
+    // function randomNums() {
+    //   output = []
+    //   for (var i = 0; i < 3; i++) {
+    //     output.push(randomize())
+    //   }
+    //   return output
+    // }
+////////////////////////////////
+
 
     getter.done(function(response){
               var randy = randomNums()
         for (var i = 0; i < 3; i++) {
-
               $(".right").append("<img class='randomImg center' src='images/"+response['results'][randy.pop()]['cover_art']+"'>")
         }
     })
 
-    
+
 
 
 
